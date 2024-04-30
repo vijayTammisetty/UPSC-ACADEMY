@@ -3,7 +3,7 @@ from django.shortcuts import render,redirect
 
 from adminapp.models import UpscInterviewVideos, UpscMockTest, UpscStudyMaterial
 from .models import AspirantFeadbackModel, AspirantsModel
-# from textblob import TextBlob
+from textblob import TextBlob
 
 # Create your views here.
 
@@ -66,6 +66,7 @@ def aspirant_register(request):
         
 
     else:
+        
         return render(request, 'aspirant/aspirants-register.html')
 
 def aspirant_login(request):
