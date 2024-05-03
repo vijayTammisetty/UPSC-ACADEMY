@@ -78,29 +78,18 @@ WSGI_APPLICATION = 'upscacademy.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-    # 'default': {
+DATABASES = {
+    'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
-        # 'ENGINE' : 'django.db.backends.mysql',
-        # 'NAME': 'upscacademy',
-        # 'USER':'root',
-        # 'PASSWORD': '',
-        # 'HOST': 'localhost',
-        # 'PORT': '3306',
-    # }
-# }
-
-DATABASES = {
-     'default': {
-         'ENGINE' : 'django.db.backends.mysql',
-         'NAME': 'djangoDB',
-         'USER':'admin',
-         'PASSWORD': 'vijay12345',
-         'HOST': 'rdsdatabse.c1802ew805me.ap-south-1.rds.amazonaws.com',
-         'PORT': '3306',
-     }
- }
+        'ENGINE' : 'django.db.backends.mysql',
+        'NAME': 'upscacademy',
+        'USER':'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
 
 
 # Password validation
