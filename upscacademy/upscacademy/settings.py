@@ -83,10 +83,10 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE' : 'django.db.backends.mysql',
-        'NAME': 'upscacademy',
-        'USER':'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'NAME': 'djangoDB',
+        'USER':'admin',
+        'PASSWORD': 'vijay12345',
+        'HOST': 'rdsdatabse.c1802ew805me.ap-south-1.rds.amazonaws.com',
         'PORT': '3306',
     }
 }
