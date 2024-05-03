@@ -19,6 +19,7 @@ class AspirantsModel(models.Model):
 
     class Meta:
         db_table = 'Aspirants_Details'
+    
 
 
 class AspirantFeadbackModel(models.Model):

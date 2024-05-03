@@ -12,7 +12,7 @@ urlpatterns = [
     path('videos-details/<int:id>/', views.videos_details, name='videos-details'),
     path('mock-test', views.mock, name='mock-test'),
     path('mock-details/<int:id>/',views.mock_details, name="mock-details"),
-    # path('feadback', views.feadback, name='feadback'),
+    path('feadback', views.feadback, name='feadback'),
     path('profile', views.profile, name='profile'),
     path('logout/',views.logout, name='logout'),
    
