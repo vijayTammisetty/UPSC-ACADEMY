@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-flask-deployment
+spec:
+  replicas: 1  # Number of desired replicas
+  selector:
+    matchLabels:
+      app: python-flask
+  template:
+    metadata:
+      labels:
+        app: python-flask
+    spec:
+      containers:
+      - name: python-flask
+        image: tammisettyvijay/flask:latest
+        ports:
+        - containerPort: 5000  # Port your application listens on

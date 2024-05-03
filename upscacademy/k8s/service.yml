@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: python-flask-service
+spec:
+  selector:
+    app: python-flask
+  ports:
+    - protocol: TCP
+      port: 80  # Port exposed by the service externally (outside the cluster)
+      targetPort: 5000  # Port your application listens on inside the pods
+  type: LoadBalancer
